@@ -46,36 +46,7 @@
 <body class="bg-slate-50 text-slate-800">
 
   <!-- Navegación -->
-  <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
-      <a href="index.html" class="font-bold tracking-tighter text-xl">GSG<span class="text-blue-600">.</span></a>
-
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest">
-        <a href="#perfil" class="hover:text-blue-600 transition">Perfil</a>
-        <a href="#experiencia" class="hover:text-blue-600 transition">Experiencia</a>
-        <a href="proyectos.html" class="hover:text-blue-600 transition">Proyectos</a>
-        <a href="https://github.com/Gseguelg" class="hover:text-blue-600 transition">Github</a>
-        <a href="#contacto" class="text-blue-600 border border-blue-600 px-4 py-2 rounded-full hover:bg-blue-50 transition">Contacto</a>
-      </div>
-
-      <!-- Mobile hamburger -->
-      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2 rounded-lg border border-slate-200 hover:bg-slate-50 transition" onclick="toggleMenu()">
-        <span class="w-5 h-0.5 bg-slate-600 block transition-all" id="h1"></span>
-        <span class="w-5 h-0.5 bg-slate-600 block transition-all" id="h2"></span>
-        <span class="w-5 h-0.5 bg-slate-600 block transition-all" id="h3"></span>
-      </button>
-    </div>
-
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="flex-col md:hidden bg-white border-t border-slate-100 px-5 py-4 space-y-1">
-      <a href="#perfil" onclick="closeMenu()" class="block py-3 text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-blue-600 border-b border-slate-100">Perfil</a>
-      <a href="#experiencia" onclick="closeMenu()" class="block py-3 text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-blue-600 border-b border-slate-100">Experiencia</a>
-      <a href="proyectos.html" class="block py-3 text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-blue-600 border-b border-slate-100">Proyectos</a>
-      <a href="https://github.com/Gseguelg" class="block py-3 text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-blue-600 border-b border-slate-100">Github</a>
-      <a href="#contacto" onclick="closeMenu()" class="block py-3 text-sm font-medium uppercase tracking-widest text-blue-600">Contacto</a>
-    </div>
-  </nav>
+  <script src="navigation.js"></script>
 
   <!-- Hero Section -->
   <section id="perfil" class="pt-28 pb-16 px-5">
@@ -122,7 +93,7 @@
   <!-- Core de Especialización -->
   <section class="py-16 md:py-20 px-5 bg-white">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center">Core de Especialización</h2>
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center">Especialización</h2>
       <div class="grid md:grid-cols-2 gap-10 md:gap-16">
         <div class="border-l-4 border-blue-500 pl-6 md:pl-8">
           <h3 class="text-lg md:text-xl font-bold mb-4 flex items-center">
@@ -368,18 +339,8 @@
     </div>
   </section>
 
-  <!-- Footer / Contacto -->
-  <footer id="contacto" class="bg-slate-900 text-white py-16 md:py-20 px-5">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">Contacto</h2>
-      <div class="flex flex-wrap justify-center gap-6 md:gap-8 mt-6">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSei_Quq4hQQZV1Gz7C4OFYaktODKp1BbhhdEFyya9KsNqXrSQ/viewform?usp=publish-editor" class="hover:text-blue-400 transition underline underline-offset-8 italic text-sm md:text-base">Mensaje Directo</a>
-        <a href="https://www.linkedin.com/in/gabrielseguelg" class="hover:text-blue-400 transition underline underline-offset-8 italic text-sm md:text-base">LinkedIn</a>
-        <a href="https://github.com/Gseguelg" class="hover:text-blue-400 transition underline underline-offset-8 italic text-sm md:text-base">Github</a>
-      </div>
-      <p class="mt-16 text-xs text-slate-500 mono tracking-widest">Mayo 2026</p>
-    </div>
-  </footer>
+  <!-- Footer Script / Contacto -->
+  <script src="footer.js"></script>
 
   <script>
     function toggleMenu() {
